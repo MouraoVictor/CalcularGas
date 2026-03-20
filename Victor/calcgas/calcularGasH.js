@@ -16,7 +16,7 @@ frm.addEventListener("submit", (e) => {
 
     const kmRodado = kmFinal - kmInicial
 
-    respCombustivelGasto.innerText = `O combustível gasto nesse dia foi: ${combustivelGasto.toFixed(2)}L e o número de Km rodados: ${kmRodado.toFixed(2)}.\n`
+    respCombustivelGasto.innerText = `Combustível gasto: ${combustivelGasto.toFixed(2)}L\n Em ${kmRodado.toFixed(2)} Kms rodados.\n`
     respKmL.innerText = `Resultando em ${(kmRodado / combustivelGasto).toFixed(2)} Km/L\n`
 
     let resposta = prompt("Abasteceu? Caso não, deixe em branco. Usaremos o valor de R$7,00 por litro de Gasolina como padrão: ")
@@ -29,6 +29,6 @@ frm.addEventListener("submit", (e) => {
     }
 
     console.log(`O combustível gasto resulta em R$${(combustivelGasto * precoCombustível).toFixed(2)} gastos para fazer o trajeto completo hoje,\n`)
-    respValorDia.innerText = `O combustível gasto resulta em R$${(combustivelGasto * precoCombustível).toFixed(2)} gastos para fazer o trajeto completo hoje,\n`
+    respValorDia.innerText = `O combustível gasto resulta em R$${(combustivelGasto * precoCombustível).toFixed(2)} gastos para fazer o trajeto completo hoje.\n`
 
 })
